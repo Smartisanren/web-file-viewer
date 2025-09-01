@@ -1,0 +1,30 @@
+{
+  "name": "hyperlink-learner-web-viewer",
+  "version": "1.0.0",
+  "description": "超链接学习者网页展示工具 - 一个用于预览和展示各种文件类型的Web应用",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'No build step required for static site'"
+  },
+  "keywords": [
+    "file-viewer",
+    "pdf-viewer",
+    "document-viewer",
+    "hyperlink-learner",
+    "web-app"
+  ],
+  "author": "超链接学习者",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/hyperlink-learner-web-viewer.git"
+  },
+  "homepage": "https://your-username.github.io/hyperlink-learner-web-viewer"
+}

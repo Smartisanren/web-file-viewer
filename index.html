@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接学习者 - 文件展示工具</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <i class="fas fa-link header-icon"></i>
+                <h1>超链接学习者</h1>
+                <p class="subtitle">知识文档管理系统</p>
+            </div>
+        </header>
+
+        <nav class="navigation">
+            <div class="nav-buttons">
+                <button class="nav-btn active" data-category="all">
+                    <i class="fas fa-home"></i> 全部文件
+                </button>
+                <button class="nav-btn" data-category="books">
+                    <i class="fas fa-book"></i> 图书文献
+                </button>
+                <button class="nav-btn" data-category="documents">
+                    <i class="fas fa-file-alt"></i> 文档资料
+                </button>
+                <button class="nav-btn" data-category="images">
+                    <i class="fas fa-image"></i> 图片素材
+                </button>
+                <button class="nav-btn" data-category="discussions">
+                    <i class="fas fa-comments"></i> 讨论交流
+                </button>
+            </div>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="搜索文件...">
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="content-header">
+                <h2 id="categoryTitle">全部文件</h2>
+                <div class="view-options">
+                    <button class="view-btn active" data-view="grid">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button class="view-btn" data-view="list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="file-grid" id="fileGrid">
+                <!-- 文件项将通过JavaScript动态生成 -->
+            </div>
+        </main>
+    </div>
+
+    <!-- 文件查看器模态框 -->
+    <div id="fileModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">文件查看器</h3>
+                <button class="close-btn" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- 文件内容将在这里显示 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 加载指示器 -->
+    <div id="loadingIndicator" class="loading-indicator">
+        <div class="spinner"></div>
+        <p>正在加载...</p>
+    </div>
+
+    <script src="pdf.min.js"></script>
+    <script src="pdf.worker.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
