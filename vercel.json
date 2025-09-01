@@ -31,7 +31,7 @@
       ]
     },
     {
-        "source": "**.pdf",
+        "source": "/*.pdf",
         "headers": [
           {
             "key": "Content-Type",
@@ -40,7 +40,7 @@
         ]
       },
     {
-        "source": "**.docx",
+        "source": "/*.docx",
         "headers": [
           {
             "key": "Content-Type",
@@ -49,7 +49,7 @@
         ]
       },
     {
-        "source": "**.mp4",
+        "source": "/*.mp4",
         "headers": [
           {
             "key": "Content-Type",
