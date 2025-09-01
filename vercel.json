@@ -31,31 +31,31 @@
       ]
     },
     {
-      "source": "/*.pdf",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/pdf"
-        }
-      ]
-    },
+        "source": "**.pdf",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/pdf"
+          }
+        ]
+      },
     {
-      "source": "/*.docx",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-        }
-      ]
-    },
+        "source": "**.docx",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+          }
+        ]
+      },
     {
-      "source": "/*.mp4",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "video/mp4"
-        }
-      ]
-    }
+        "source": "**.mp4",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "video/mp4"
+          }
+        ]
+      }
   ]
 }
